@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+    - name: staging
+      database: dtc-de-course-339113
+
+      schema: nfl_project
+
+      tables:
+        - name: pbp_data_partitioned
+        - name: external_roster_data
