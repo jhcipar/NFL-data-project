@@ -1,0 +1,24 @@
+[2022-04-24 14:46:55,274] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.bq_ext_2_part_task scheduled__2010-01-01T00:00:00+00:00 [queued]>
+[2022-04-24 14:46:55,285] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.bq_ext_2_part_task scheduled__2010-01-01T00:00:00+00:00 [queued]>
+[2022-04-24 14:46:55,285] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-24 14:46:55,285] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-24 14:46:55,285] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-24 14:46:55,297] {taskinstance.py:1259} INFO - Executing <Task(BigQueryInsertJobOperator): bq_ext_2_part_task> on 2010-01-01 00:00:00+00:00
+[2022-04-24 14:46:55,304] {standard_task_runner.py:52} INFO - Started process 3012 to run task
+[2022-04-24 14:46:55,310] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data_bq_dag', 'bq_ext_2_part_task', 'scheduled__2010-01-01T00:00:00+00:00', '--job-id', '2190', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmp33dka_rf', '--error-file', '/tmp/tmpkunzdiok']
+[2022-04-24 14:46:55,312] {standard_task_runner.py:77} INFO - Job 2190: Subtask bq_ext_2_part_task
+[2022-04-24 14:46:55,384] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data_bq_dag.bq_ext_2_part_task scheduled__2010-01-01T00:00:00+00:00 [running]> on host 28475d5c3e7a
+[2022-04-24 14:46:55,472] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data_bq_dag
+AIRFLOW_CTX_TASK_ID=bq_ext_2_part_task
+AIRFLOW_CTX_EXECUTION_DATE=2010-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2010-01-01T00:00:00+00:00
+[2022-04-24 14:46:55,477] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-24 14:46:55,486] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-24 14:46:55,497] {bigquery.py:1637} INFO - Inserting job ***_pbp_data_bq_dag_bq_ext_2_part_task_2010_01_01T00_00_00_00_00_c38438f8406c3ad41534007d3cae6702
+[2022-04-24 14:46:59,166] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=bq_ext_2_part_task, execution_date=20100101T000000, start_date=20220424T144655, end_date=20220424T144659
+[2022-04-24 14:46:59,220] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-24 14:46:59,256] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,68 @@
+[2022-04-11 20:01:24,277] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.local_to_gcs_task scheduled__2011-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:01:24,304] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.local_to_gcs_task scheduled__2011-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:01:24,305] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:01:24,305] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-11 20:01:24,305] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:01:24,327] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2011-01-01 00:00:00+00:00
+[2022-04-11 20:01:24,341] {standard_task_runner.py:52} INFO - Started process 357409 to run task
+[2022-04-11 20:01:24,354] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'roster_data', 'local_to_gcs_task', 'scheduled__2011-01-01T00:00:00+00:00', '--job-id', '1821', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmph7g6q36t', '--error-file', '/tmp/tmpsfhur283']
+[2022-04-11 20:01:24,355] {standard_task_runner.py:77} INFO - Job 1821: Subtask local_to_gcs_task
+[2022-04-11 20:01:24,481] {logging_mixin.py:109} INFO - Running <TaskInstance: roster_data.local_to_gcs_task scheduled__2011-01-01T00:00:00+00:00 [running]> on host 4ed3eda454fd
+[2022-04-11 20:01:24,570] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-11 20:01:24,613] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=roster_data
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2011-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2011-01-01T00:00:00+00:00
+[2022-04-11 20:01:24,616] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-04-11 20:01:24,618] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-04-11 20:01:24,619] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-04-11 20:01:24,623] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-04-11 20:01:24,625] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-04-11 20:01:24,626] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-04-11 20:01:24,627] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-04-11 20:01:24,629] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-04-11 20:01:24,631] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-04-11 20:01:24,632] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-04-11 20:01:24,634] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-04-11 20:01:25,370] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-11 20:01:25,391] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=roster_data, task_id=local_to_gcs_task, execution_date=20110101T000000, start_date=20220411T200124, end_date=20220411T200125
+[2022-04-11 20:01:25,457] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 20:01:25,533] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-23 16:32:02,933] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.local_to_gcs_task scheduled__2011-01-01T00:00:00+00:00 [queued]>
+[2022-04-23 16:32:02,976] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.local_to_gcs_task scheduled__2011-01-01T00:00:00+00:00 [queued]>
+[2022-04-23 16:32:02,977] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 16:32:02,977] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-23 16:32:02,977] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 16:32:03,017] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2011-01-01 00:00:00+00:00
+[2022-04-23 16:32:03,025] {standard_task_runner.py:52} INFO - Started process 2909 to run task
+[2022-04-23 16:32:03,040] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'roster_data', 'local_to_gcs_task', 'scheduled__2011-01-01T00:00:00+00:00', '--job-id', '2111', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmpt63rcmop', '--error-file', '/tmp/tmpzepx_o33']
+[2022-04-23 16:32:03,058] {standard_task_runner.py:77} INFO - Job 2111: Subtask local_to_gcs_task
+[2022-04-23 16:32:03,234] {logging_mixin.py:109} INFO - Running <TaskInstance: roster_data.local_to_gcs_task scheduled__2011-01-01T00:00:00+00:00 [running]> on host 04f3a8edbeca
+[2022-04-23 16:32:03,366] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-23 16:32:03,396] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=roster_data
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2011-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2011-01-01T00:00:00+00:00
+[2022-04-23 16:32:03,398] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-04-23 16:32:03,400] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-04-23 16:32:03,402] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-04-23 16:32:03,403] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-04-23 16:32:03,404] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-04-23 16:32:03,406] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-04-23 16:32:03,407] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-04-23 16:32:03,408] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-04-23 16:32:03,410] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-04-23 16:32:03,411] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-04-23 16:32:03,412] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-04-23 16:32:04,141] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-23 16:32:04,163] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=roster_data, task_id=local_to_gcs_task, execution_date=20110101T000000, start_date=20220423T163202, end_date=20220423T163204
+[2022-04-23 16:32:04,226] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-23 16:32:04,474] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

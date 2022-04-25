@@ -1,0 +1,52 @@
+[2022-04-11 20:01:28,143] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.rm_task scheduled__2012-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:01:28,160] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.rm_task scheduled__2012-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:01:28,160] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:01:28,160] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-11 20:01:28,160] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:01:28,182] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2012-01-01 00:00:00+00:00
+[2022-04-11 20:01:28,192] {standard_task_runner.py:52} INFO - Started process 357447 to run task
+[2022-04-11 20:01:28,205] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'roster_data', 'rm_task', 'scheduled__2012-01-01T00:00:00+00:00', '--job-id', '1826', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmp0pk7hzdv', '--error-file', '/tmp/tmpcmc5b9os']
+[2022-04-11 20:01:28,207] {standard_task_runner.py:77} INFO - Job 1826: Subtask rm_task
+[2022-04-11 20:01:28,339] {logging_mixin.py:109} INFO - Running <TaskInstance: roster_data.rm_task scheduled__2012-01-01T00:00:00+00:00 [running]> on host 4ed3eda454fd
+[2022-04-11 20:01:28,546] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=roster_data
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2012-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-01-01T00:00:00+00:00
+[2022-04-11 20:01:28,548] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-11 20:01:28,549] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm "/opt/***/roster_data_2012.parquet"']
+[2022-04-11 20:01:28,570] {subprocess.py:85} INFO - Output:
+[2022-04-11 20:01:28,577] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-11 20:01:28,640] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=roster_data, task_id=rm_task, execution_date=20120101T000000, start_date=20220411T200128, end_date=20220411T200128
+[2022-04-11 20:01:28,723] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 20:01:28,805] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-23 16:32:07,659] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.rm_task scheduled__2012-01-01T00:00:00+00:00 [queued]>
+[2022-04-23 16:32:07,688] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: roster_data.rm_task scheduled__2012-01-01T00:00:00+00:00 [queued]>
+[2022-04-23 16:32:07,688] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 16:32:07,688] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-23 16:32:07,689] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 16:32:07,716] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2012-01-01 00:00:00+00:00
+[2022-04-23 16:32:07,726] {standard_task_runner.py:52} INFO - Started process 2943 to run task
+[2022-04-23 16:32:07,745] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'roster_data', 'rm_task', 'scheduled__2012-01-01T00:00:00+00:00', '--job-id', '2115', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmpt2qpyhfy', '--error-file', '/tmp/tmpqg108fa7']
+[2022-04-23 16:32:07,749] {standard_task_runner.py:77} INFO - Job 2115: Subtask rm_task
+[2022-04-23 16:32:07,895] {logging_mixin.py:109} INFO - Running <TaskInstance: roster_data.rm_task scheduled__2012-01-01T00:00:00+00:00 [running]> on host 04f3a8edbeca
+[2022-04-23 16:32:08,075] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=roster_data
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2012-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-01-01T00:00:00+00:00
+[2022-04-23 16:32:08,082] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-23 16:32:08,083] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm "/opt/***/roster_data_2012.parquet"']
+[2022-04-23 16:32:08,106] {subprocess.py:85} INFO - Output:
+[2022-04-23 16:32:08,113] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-23 16:32:08,191] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=roster_data, task_id=rm_task, execution_date=20120101T000000, start_date=20220423T163207, end_date=20220423T163208
+[2022-04-23 16:32:08,242] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-23 16:32:08,313] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,22 @@
+[2022-04-24 14:46:14,968] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2005-01-01T00:00:00+00:00 [queued]>
+[2022-04-24 14:46:14,984] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2005-01-01T00:00:00+00:00 [queued]>
+[2022-04-24 14:46:14,985] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-24 14:46:14,985] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-24 14:46:14,985] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-24 14:46:15,004] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): gcs_2_bq_ext_task> on 2005-01-01 00:00:00+00:00
+[2022-04-24 14:46:15,012] {standard_task_runner.py:52} INFO - Started process 2852 to run task
+[2022-04-24 14:46:15,018] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data_bq_dag', 'gcs_2_bq_ext_task', 'scheduled__2005-01-01T00:00:00+00:00', '--job-id', '2178', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmp1ry8wcz5', '--error-file', '/tmp/tmpd2g7n47q']
+[2022-04-24 14:46:15,020] {standard_task_runner.py:77} INFO - Job 2178: Subtask gcs_2_bq_ext_task
+[2022-04-24 14:46:15,111] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2005-01-01T00:00:00+00:00 [running]> on host 28475d5c3e7a
+[2022-04-24 14:46:15,194] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data_bq_dag
+AIRFLOW_CTX_TASK_ID=gcs_2_bq_ext_task
+AIRFLOW_CTX_EXECUTION_DATE=2005-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2005-01-01T00:00:00+00:00
+[2022-04-24 14:46:15,196] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-24 14:46:15,808] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20050101T000000, start_date=20220424T144614, end_date=20220424T144615
+[2022-04-24 14:46:15,834] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-24 14:46:15,869] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

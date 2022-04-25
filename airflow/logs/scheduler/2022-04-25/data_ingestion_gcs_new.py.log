@@ -1,0 +1,80 @@
+[2022-04-25 00:09:44,817] {processor.py:163} INFO - Started process (PID=180) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:09:44,818] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:09:44,819] {logging_mixin.py:109} INFO - [2022-04-25 00:09:44,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:09:45,158] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:09:45,878] {logging_mixin.py:109} INFO - [2022-04-25 00:09:45,877] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:09:45,903] {logging_mixin.py:109} INFO - [2022-04-25 00:09:45,903] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:09:45,905] {logging_mixin.py:109} INFO - [2022-04-25 00:09:45,905] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:09:45,907] {logging_mixin.py:109} INFO - [2022-04-25 00:09:45,907] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:09:45,908] {logging_mixin.py:109} INFO - [2022-04-25 00:09:45,908] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:09:45,928] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 1.116 seconds
+[2022-04-25 00:10:16,738] {processor.py:163} INFO - Started process (PID=235) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:10:16,740] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:10:16,741] {logging_mixin.py:109} INFO - [2022-04-25 00:10:16,741] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:10:17,031] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:10:17,065] {logging_mixin.py:109} INFO - [2022-04-25 00:10:17,064] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:10:17,084] {logging_mixin.py:109} INFO - [2022-04-25 00:10:17,084] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:10:17,086] {logging_mixin.py:109} INFO - [2022-04-25 00:10:17,085] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:10:17,087] {logging_mixin.py:109} INFO - [2022-04-25 00:10:17,087] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:10:17,088] {logging_mixin.py:109} INFO - [2022-04-25 00:10:17,087] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:10:17,100] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 0.366 seconds
+[2022-04-25 00:10:47,221] {processor.py:163} INFO - Started process (PID=292) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:10:47,224] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:10:47,225] {logging_mixin.py:109} INFO - [2022-04-25 00:10:47,225] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:10:47,510] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:10:47,544] {logging_mixin.py:109} INFO - [2022-04-25 00:10:47,543] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:10:47,562] {logging_mixin.py:109} INFO - [2022-04-25 00:10:47,562] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:10:47,564] {logging_mixin.py:109} INFO - [2022-04-25 00:10:47,563] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:10:47,565] {logging_mixin.py:109} INFO - [2022-04-25 00:10:47,565] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:10:47,565] {logging_mixin.py:109} INFO - [2022-04-25 00:10:47,565] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:10:47,576] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 0.361 seconds
+[2022-04-25 00:11:18,190] {processor.py:163} INFO - Started process (PID=339) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:11:18,192] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:11:18,193] {logging_mixin.py:109} INFO - [2022-04-25 00:11:18,193] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:11:18,454] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:11:18,495] {logging_mixin.py:109} INFO - [2022-04-25 00:11:18,495] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:11:18,514] {logging_mixin.py:109} INFO - [2022-04-25 00:11:18,514] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:11:18,516] {logging_mixin.py:109} INFO - [2022-04-25 00:11:18,516] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:11:18,517] {logging_mixin.py:109} INFO - [2022-04-25 00:11:18,517] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:11:18,518] {logging_mixin.py:109} INFO - [2022-04-25 00:11:18,518] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:11:18,529] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 0.344 seconds
+[2022-04-25 00:11:49,135] {processor.py:163} INFO - Started process (PID=392) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:11:49,137] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:11:49,138] {logging_mixin.py:109} INFO - [2022-04-25 00:11:49,138] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:11:49,415] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:11:49,447] {logging_mixin.py:109} INFO - [2022-04-25 00:11:49,447] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:11:49,465] {logging_mixin.py:109} INFO - [2022-04-25 00:11:49,465] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:11:49,467] {logging_mixin.py:109} INFO - [2022-04-25 00:11:49,466] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:11:49,468] {logging_mixin.py:109} INFO - [2022-04-25 00:11:49,468] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:11:49,468] {logging_mixin.py:109} INFO - [2022-04-25 00:11:49,468] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:11:49,479] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 0.348 seconds
+[2022-04-25 00:12:20,220] {processor.py:163} INFO - Started process (PID=440) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:12:20,222] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:12:20,223] {logging_mixin.py:109} INFO - [2022-04-25 00:12:20,223] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:12:20,484] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:12:20,515] {logging_mixin.py:109} INFO - [2022-04-25 00:12:20,515] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:12:20,534] {logging_mixin.py:109} INFO - [2022-04-25 00:12:20,534] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:12:20,536] {logging_mixin.py:109} INFO - [2022-04-25 00:12:20,536] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:12:20,537] {logging_mixin.py:109} INFO - [2022-04-25 00:12:20,537] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:12:20,538] {logging_mixin.py:109} INFO - [2022-04-25 00:12:20,538] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:12:20,550] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 0.334 seconds
+[2022-04-25 00:12:51,504] {processor.py:163} INFO - Started process (PID=497) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:12:51,506] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:12:51,507] {logging_mixin.py:109} INFO - [2022-04-25 00:12:51,507] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:12:51,769] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:12:51,801] {logging_mixin.py:109} INFO - [2022-04-25 00:12:51,801] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:12:51,820] {logging_mixin.py:109} INFO - [2022-04-25 00:12:51,820] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:12:51,821] {logging_mixin.py:109} INFO - [2022-04-25 00:12:51,821] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:12:51,822] {logging_mixin.py:109} INFO - [2022-04-25 00:12:51,822] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:12:51,823] {logging_mixin.py:109} INFO - [2022-04-25 00:12:51,823] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:12:51,834] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 0.334 seconds
+[2022-04-25 00:13:22,635] {processor.py:163} INFO - Started process (PID=552) to work on /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:13:22,640] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_new.py for tasks to queue
+[2022-04-25 00:13:22,642] {logging_mixin.py:109} INFO - [2022-04-25 00:13:22,641] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:13:22,923] {processor.py:652} INFO - DAG(s) dict_keys(['yellow_taxi_dag', 'green_taxi_data_v1', 'hfv_taxi_data_v1', 'zones_data_v1']) retrieved from /opt/airflow/dags/data_ingestion_gcs_new.py
+[2022-04-25 00:13:22,958] {logging_mixin.py:109} INFO - [2022-04-25 00:13:22,958] {dag.py:2398} INFO - Sync 4 DAGs
+[2022-04-25 00:13:22,978] {logging_mixin.py:109} INFO - [2022-04-25 00:13:22,978] {dag.py:2937} INFO - Setting next_dagrun for green_taxi_data_v1 to 2019-01-02 07:00:00+00:00
+[2022-04-25 00:13:22,980] {logging_mixin.py:109} INFO - [2022-04-25 00:13:22,980] {dag.py:2937} INFO - Setting next_dagrun for hfv_taxi_data_v1 to 2019-01-02 08:00:00+00:00
+[2022-04-25 00:13:22,981] {logging_mixin.py:109} INFO - [2022-04-25 00:13:22,981] {dag.py:2937} INFO - Setting next_dagrun for yellow_taxi_dag to 2019-01-02 06:00:00+00:00
+[2022-04-25 00:13:22,982] {logging_mixin.py:109} INFO - [2022-04-25 00:13:22,982] {dag.py:2937} INFO - Setting next_dagrun for zones_data_v1 to 2022-04-24T00:00:00+00:00
+[2022-04-25 00:13:22,996] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_new.py took 0.367 seconds

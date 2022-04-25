@@ -1,0 +1,22 @@
+[2022-04-24 14:45:50,178] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data_bq_dag.gcs_2_bq_ext_task scheduled__2010-01-01T00:00:00+00:00 [queued]>
+[2022-04-24 14:45:50,194] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data_bq_dag.gcs_2_bq_ext_task scheduled__2010-01-01T00:00:00+00:00 [queued]>
+[2022-04-24 14:45:50,195] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-24 14:45:50,195] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-24 14:45:50,195] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-24 14:45:50,215] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): gcs_2_bq_ext_task> on 2010-01-01 00:00:00+00:00
+[2022-04-24 14:45:50,234] {standard_task_runner.py:52} INFO - Started process 2733 to run task
+[2022-04-24 14:45:50,253] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'injury_data_bq_dag', 'gcs_2_bq_ext_task', 'scheduled__2010-01-01T00:00:00+00:00', '--job-id', '2159', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmphykxlflu', '--error-file', '/tmp/tmp7_tlx_02']
+[2022-04-24 14:45:50,255] {standard_task_runner.py:77} INFO - Job 2159: Subtask gcs_2_bq_ext_task
+[2022-04-24 14:45:50,401] {logging_mixin.py:109} INFO - Running <TaskInstance: injury_data_bq_dag.gcs_2_bq_ext_task scheduled__2010-01-01T00:00:00+00:00 [running]> on host 28475d5c3e7a
+[2022-04-24 14:45:50,569] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=injury_data_bq_dag
+AIRFLOW_CTX_TASK_ID=gcs_2_bq_ext_task
+AIRFLOW_CTX_EXECUTION_DATE=2010-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2010-01-01T00:00:00+00:00
+[2022-04-24 14:45:50,573] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-24 14:45:51,437] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=injury_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20100101T000000, start_date=20220424T144550, end_date=20220424T144551
+[2022-04-24 14:45:51,556] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-24 14:45:51,666] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

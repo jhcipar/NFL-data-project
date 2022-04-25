@@ -1,0 +1,73 @@
+[2022-04-11 17:37:36,592] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: schedule_data.rm_task scheduled__2019-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 17:37:36,602] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: schedule_data.rm_task scheduled__2019-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 17:37:36,603] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 17:37:36,603] {taskinstance.py:1239} INFO - Starting attempt 7 of 7
+[2022-04-11 17:37:36,603] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 17:37:36,614] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2019-01-01 00:00:00+00:00
+[2022-04-11 17:37:36,622] {standard_task_runner.py:52} INFO - Started process 344571 to run task
+[2022-04-11 17:37:36,627] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'schedule_data', 'rm_task', 'scheduled__2019-01-01T00:00:00+00:00', '--job-id', '1693', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmpz23me0zu', '--error-file', '/tmp/tmp9_w0go0b']
+[2022-04-11 17:37:36,628] {standard_task_runner.py:77} INFO - Job 1693: Subtask rm_task
+[2022-04-11 17:37:36,687] {logging_mixin.py:109} INFO - Running <TaskInstance: schedule_data.rm_task scheduled__2019-01-01T00:00:00+00:00 [running]> on host 4ed3eda454fd
+[2022-04-11 17:37:36,727] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1418, in _execute_task_with_callbacks
+    self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1992, in render_templates
+    self.task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1061, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1074, in _do_render_template_fields
+    rendered_content = self.render_template(content, context, jinja_env, seen_oids)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1110, in render_template
+    template = jinja_env.from_string(content)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1092, in from_string
+    return cls.from_code(self, self.compile(source), gs, None)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<unknown>", line 1, in template
+jinja2.exceptions.TemplateSyntaxError: unexpected '/'
+[2022-04-11 17:37:36,741] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=schedule_data, task_id=rm_task, execution_date=20190101T000000, start_date=20220411T173736, end_date=20220411T173736
+[2022-04-11 17:37:36,755] {standard_task_runner.py:92} ERROR - Failed to execute job 1693 for task rm_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1418, in _execute_task_with_callbacks
+    self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1992, in render_templates
+    self.task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1061, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1074, in _do_render_template_fields
+    rendered_content = self.render_template(content, context, jinja_env, seen_oids)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1110, in render_template
+    template = jinja_env.from_string(content)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1092, in from_string
+    return cls.from_code(self, self.compile(source), gs, None)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<unknown>", line 1, in template
+jinja2.exceptions.TemplateSyntaxError: unexpected '/'
+[2022-04-11 17:37:36,799] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-04-11 17:37:36,832] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

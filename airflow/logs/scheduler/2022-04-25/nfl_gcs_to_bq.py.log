@@ -1,0 +1,112 @@
+[2022-04-25 00:09:42,956] {processor.py:163} INFO - Started process (PID=162) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:09:42,957] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:09:42,958] {logging_mixin.py:109} INFO - [2022-04-25 00:09:42,958] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:09:44,753] {logging_mixin.py:109} INFO - [2022-04-25 00:09:44,752] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:09:44,753] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:09:44,778] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 1.828 seconds
+[2022-04-25 00:10:14,923] {processor.py:163} INFO - Started process (PID=217) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:10:14,929] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:10:14,930] {logging_mixin.py:109} INFO - [2022-04-25 00:10:14,930] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:10:15,682] {logging_mixin.py:109} INFO - [2022-04-25 00:10:15,681] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:10:15,682] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:10:15,703] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 0.784 seconds
+[2022-04-25 00:10:45,824] {processor.py:163} INFO - Started process (PID=265) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:10:45,831] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:10:45,832] {logging_mixin.py:109} INFO - [2022-04-25 00:10:45,832] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:10:46,619] {logging_mixin.py:109} INFO - [2022-04-25 00:10:46,618] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:10:46,619] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:10:46,646] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 0.827 seconds
+[2022-04-25 00:11:17,302] {processor.py:163} INFO - Started process (PID=322) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:11:17,304] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:11:17,306] {logging_mixin.py:109} INFO - [2022-04-25 00:11:17,305] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:11:18,128] {logging_mixin.py:109} INFO - [2022-04-25 00:11:18,126] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:11:18,128] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:11:18,151] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 0.853 seconds
+[2022-04-25 00:11:48,263] {processor.py:163} INFO - Started process (PID=376) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:11:48,265] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:11:48,266] {logging_mixin.py:109} INFO - [2022-04-25 00:11:48,265] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:11:49,085] {logging_mixin.py:109} INFO - [2022-04-25 00:11:49,084] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:11:49,086] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:11:49,105] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 0.846 seconds
+[2022-04-25 00:12:19,292] {processor.py:163} INFO - Started process (PID=422) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:12:19,294] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:12:19,295] {logging_mixin.py:109} INFO - [2022-04-25 00:12:19,294] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:12:20,164] {logging_mixin.py:109} INFO - [2022-04-25 00:12:20,163] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:12:20,165] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:12:20,184] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 0.898 seconds
+[2022-04-25 00:12:50,667] {processor.py:163} INFO - Started process (PID=479) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:12:50,669] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:12:50,670] {logging_mixin.py:109} INFO - [2022-04-25 00:12:50,670] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:12:51,463] {logging_mixin.py:109} INFO - [2022-04-25 00:12:51,462] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:12:51,463] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:12:51,485] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 0.822 seconds
+[2022-04-25 00:13:21,573] {processor.py:163} INFO - Started process (PID=536) to work on /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:13:21,582] {processor.py:642} INFO - Processing file /opt/airflow/dags/nfl_gcs_to_bq.py for tasks to queue
+[2022-04-25 00:13:21,583] {logging_mixin.py:109} INFO - [2022-04-25 00:13:21,583] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:13:22,565] {logging_mixin.py:109} INFO - [2022-04-25 00:13:22,564] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/nfl_gcs_to_bq.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/nfl_gcs_to_bq.py", line 13, in <module>
+    import nflfastpy as nfl
+ModuleNotFoundError: No module named 'nflfastpy'
+[2022-04-25 00:13:22,566] {processor.py:654} WARNING - No viable dags retrieved from /opt/airflow/dags/nfl_gcs_to_bq.py
+[2022-04-25 00:13:22,593] {processor.py:171} INFO - Processing /opt/airflow/dags/nfl_gcs_to_bq.py took 1.025 seconds

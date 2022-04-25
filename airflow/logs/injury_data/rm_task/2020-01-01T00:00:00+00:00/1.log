@@ -1,0 +1,78 @@
+[2022-04-11 20:01:28,093] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:01:28,116] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:01:28,116] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:01:28,117] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-11 20:01:28,117] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:01:28,141] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2020-01-01 00:00:00+00:00
+[2022-04-11 20:01:28,150] {standard_task_runner.py:52} INFO - Started process 357445 to run task
+[2022-04-11 20:01:28,178] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'injury_data', 'rm_task', 'scheduled__2020-01-01T00:00:00+00:00', '--job-id', '1824', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmpe74e0g77', '--error-file', '/tmp/tmpo1f_drut']
+[2022-04-11 20:01:28,182] {standard_task_runner.py:77} INFO - Job 1824: Subtask rm_task
+[2022-04-11 20:01:28,311] {logging_mixin.py:109} INFO - Running <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [running]> on host 4ed3eda454fd
+[2022-04-11 20:01:28,487] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=injury_data
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:00:00+00:00
+[2022-04-11 20:01:28,489] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-11 20:01:28,490] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm "/opt/***/injury_data_2020.parquet"']
+[2022-04-11 20:01:28,513] {subprocess.py:85} INFO - Output:
+[2022-04-11 20:01:28,521] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-11 20:01:28,584] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=injury_data, task_id=rm_task, execution_date=20200101T000000, start_date=20220411T200128, end_date=20220411T200128
+[2022-04-11 20:01:28,649] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 20:01:28,715] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-11 20:05:08,752] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:05:08,773] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:05:08,773] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:05:08,773] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-11 20:05:08,773] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:05:08,793] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2020-01-01 00:00:00+00:00
+[2022-04-11 20:05:08,805] {standard_task_runner.py:52} INFO - Started process 358498 to run task
+[2022-04-11 20:05:08,816] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'injury_data', 'rm_task', 'scheduled__2020-01-01T00:00:00+00:00', '--job-id', '1931', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmpnm3e5c08', '--error-file', '/tmp/tmprgicril3']
+[2022-04-11 20:05:08,818] {standard_task_runner.py:77} INFO - Job 1931: Subtask rm_task
+[2022-04-11 20:05:08,916] {logging_mixin.py:109} INFO - Running <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [running]> on host 4ed3eda454fd
+[2022-04-11 20:05:09,032] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=injury_data
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:00:00+00:00
+[2022-04-11 20:05:09,033] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-11 20:05:09,034] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm "/opt/***/injury_data_2020.parquet"']
+[2022-04-11 20:05:09,061] {subprocess.py:85} INFO - Output:
+[2022-04-11 20:05:09,069] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-11 20:05:09,113] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=injury_data, task_id=rm_task, execution_date=20200101T000000, start_date=20220411T200508, end_date=20220411T200509
+[2022-04-11 20:05:09,150] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 20:05:09,193] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-23 16:32:08,255] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-04-23 16:32:08,315] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [queued]>
+[2022-04-23 16:32:08,316] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 16:32:08,316] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-23 16:32:08,316] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-23 16:32:08,341] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2020-01-01 00:00:00+00:00
+[2022-04-23 16:32:08,356] {standard_task_runner.py:52} INFO - Started process 2948 to run task
+[2022-04-23 16:32:08,367] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'injury_data', 'rm_task', 'scheduled__2020-01-01T00:00:00+00:00', '--job-id', '2118', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmp8ckn0vm_', '--error-file', '/tmp/tmp882g0j_p']
+[2022-04-23 16:32:08,372] {standard_task_runner.py:77} INFO - Job 2118: Subtask rm_task
+[2022-04-23 16:32:08,475] {logging_mixin.py:109} INFO - Running <TaskInstance: injury_data.rm_task scheduled__2020-01-01T00:00:00+00:00 [running]> on host 04f3a8edbeca
+[2022-04-23 16:32:08,597] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=injury_data
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:00:00+00:00
+[2022-04-23 16:32:08,600] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-23 16:32:08,601] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm "/opt/***/injury_data_2020.parquet"']
+[2022-04-23 16:32:08,619] {subprocess.py:85} INFO - Output:
+[2022-04-23 16:32:08,625] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-23 16:32:08,669] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=injury_data, task_id=rm_task, execution_date=20200101T000000, start_date=20220423T163208, end_date=20220423T163208
+[2022-04-23 16:32:08,714] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-23 16:32:08,759] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

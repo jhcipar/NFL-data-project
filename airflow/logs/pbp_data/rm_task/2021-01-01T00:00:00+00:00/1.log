@@ -1,0 +1,52 @@
+[2022-04-11 19:59:50,366] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data.rm_task scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 19:59:50,415] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data.rm_task scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 19:59:50,416] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 19:59:50,416] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-11 19:59:50,417] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 19:59:50,493] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2021-01-01 00:00:00+00:00
+[2022-04-11 19:59:50,546] {standard_task_runner.py:52} INFO - Started process 356698 to run task
+[2022-04-11 19:59:50,564] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data', 'rm_task', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '1740', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmp7nikqh8p', '--error-file', '/tmp/tmp60510ya3']
+[2022-04-11 19:59:50,566] {standard_task_runner.py:77} INFO - Job 1740: Subtask rm_task
+[2022-04-11 19:59:50,924] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data.rm_task scheduled__2021-01-01T00:00:00+00:00 [running]> on host 4ed3eda454fd
+[2022-04-11 19:59:51,168] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2022-04-11 19:59:51,170] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-11 19:59:51,171] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm "/opt/***/pbp_data_2021.parquet"']
+[2022-04-11 19:59:51,220] {subprocess.py:85} INFO - Output:
+[2022-04-11 19:59:51,276] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-11 19:59:51,333] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data, task_id=rm_task, execution_date=20210101T000000, start_date=20220411T195950, end_date=20220411T195951
+[2022-04-11 19:59:51,423] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 19:59:51,481] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-11 20:08:20,239] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data.rm_task scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:08:20,251] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data.rm_task scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2022-04-11 20:08:20,251] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:08:20,251] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-11 20:08:20,251] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 20:08:20,264] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): rm_task> on 2021-01-01 00:00:00+00:00
+[2022-04-11 20:08:20,273] {standard_task_runner.py:52} INFO - Started process 359449 to run task
+[2022-04-11 20:08:20,278] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data', 'rm_task', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '2029', '--raw', '--subdir', 'DAGS_FOLDER/nfl_to_gcs.py', '--cfg-path', '/tmp/tmpdd3163xp', '--error-file', '/tmp/tmppz8eslbe']
+[2022-04-11 20:08:20,280] {standard_task_runner.py:77} INFO - Job 2029: Subtask rm_task
+[2022-04-11 20:08:20,352] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data.rm_task scheduled__2021-01-01T00:00:00+00:00 [running]> on host 4ed3eda454fd
+[2022-04-11 20:08:20,434] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data
+AIRFLOW_CTX_TASK_ID=rm_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2022-04-11 20:08:20,436] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-11 20:08:20,436] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm "/opt/***/pbp_data_2021.parquet"']
+[2022-04-11 20:08:20,454] {subprocess.py:85} INFO - Output:
+[2022-04-11 20:08:20,463] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-11 20:08:20,492] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data, task_id=rm_task, execution_date=20210101T000000, start_date=20220411T200820, end_date=20220411T200820
+[2022-04-11 20:08:20,532] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 20:08:20,566] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
