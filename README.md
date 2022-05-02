@@ -62,6 +62,6 @@ This dashboard allows visualization of total receiving yards per player, with co
 
 ## Next steps
 
--Improve project documentation
--Fix .parquet column bugs in DWH by explicitly providing column types in data ingestion DAG
--Calculate additional position stats in dbt (e.g., rushing yards and touchdowns, passing yards and touchdowns, special teams, defensive metrics)
+- Improve project documentation
+- Fix .parquet column bugs in DWH by explicitly providing column types in data ingestion DAG
+- Calculate additional position stats in dbt (e.g., rushing yards and touchdowns, passing yards and touchdowns, special teams, defensive metrics)
