@@ -20,3 +20,113 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2003-01-01T00:00:00+00:00
 [2022-04-24 14:46:04,185] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20030101T000000, start_date=20220424T144603, end_date=20220424T144604
 [2022-04-24 14:46:04,225] {local_task_job.py:154} INFO - Task exited with return code 0
 [2022-04-24 14:46:04,261] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-25 12:35:43,372] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:35:43,386] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:35:43,386] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:35:43,387] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-25 12:35:43,387] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:35:43,402] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): gcs_2_bq_ext_task> on 2003-01-01 00:00:00+00:00
+[2022-04-25 12:35:43,408] {standard_task_runner.py:52} INFO - Started process 570 to run task
+[2022-04-25 12:35:43,416] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data_bq_dag', 'gcs_2_bq_ext_task', 'scheduled__2003-01-01T00:00:00+00:00', '--job-id', '2329', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmpqf32v_uj', '--error-file', '/tmp/tmpk85uwgyo']
+[2022-04-25 12:35:43,417] {standard_task_runner.py:77} INFO - Job 2329: Subtask gcs_2_bq_ext_task
+[2022-04-25 12:35:43,500] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [running]> on host de169a1be7ed
+[2022-04-25 12:35:43,591] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data_bq_dag
+AIRFLOW_CTX_TASK_ID=gcs_2_bq_ext_task
+AIRFLOW_CTX_EXECUTION_DATE=2003-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2003-01-01T00:00:00+00:00
+[2022-04-25 12:35:43,593] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-25 12:35:44,217] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20030101T000000, start_date=20220425T123543, end_date=20220425T123544
+[2022-04-25 12:35:44,270] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-25 12:35:44,314] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-25 12:42:39,745] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:42:39,760] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:42:39,760] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:42:39,760] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-25 12:42:39,760] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:42:39,781] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): gcs_2_bq_ext_task> on 2003-01-01 00:00:00+00:00
+[2022-04-25 12:42:39,787] {standard_task_runner.py:52} INFO - Started process 1537 to run task
+[2022-04-25 12:42:39,794] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data_bq_dag', 'gcs_2_bq_ext_task', 'scheduled__2003-01-01T00:00:00+00:00', '--job-id', '2375', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmpsw31pg9p', '--error-file', '/tmp/tmpxe7kzx_5']
+[2022-04-25 12:42:39,795] {standard_task_runner.py:77} INFO - Job 2375: Subtask gcs_2_bq_ext_task
+[2022-04-25 12:42:39,884] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [running]> on host de169a1be7ed
+[2022-04-25 12:42:39,976] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data_bq_dag
+AIRFLOW_CTX_TASK_ID=gcs_2_bq_ext_task
+AIRFLOW_CTX_EXECUTION_DATE=2003-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2003-01-01T00:00:00+00:00
+[2022-04-25 12:42:39,978] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-25 12:42:40,618] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20030101T000000, start_date=20220425T124239, end_date=20220425T124240
+[2022-04-25 12:42:40,652] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-25 12:42:40,702] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-25 12:43:58,379] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:43:58,403] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:43:58,403] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:43:58,403] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-25 12:43:58,403] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:43:58,422] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): gcs_2_bq_ext_task> on 2003-01-01 00:00:00+00:00
+[2022-04-25 12:43:58,430] {standard_task_runner.py:52} INFO - Started process 1795 to run task
+[2022-04-25 12:43:58,438] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data_bq_dag', 'gcs_2_bq_ext_task', 'scheduled__2003-01-01T00:00:00+00:00', '--job-id', '2396', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmpaxdzf1k0', '--error-file', '/tmp/tmpg_ww0ypx']
+[2022-04-25 12:43:58,439] {standard_task_runner.py:77} INFO - Job 2396: Subtask gcs_2_bq_ext_task
+[2022-04-25 12:43:58,519] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [running]> on host de169a1be7ed
+[2022-04-25 12:43:58,611] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data_bq_dag
+AIRFLOW_CTX_TASK_ID=gcs_2_bq_ext_task
+AIRFLOW_CTX_EXECUTION_DATE=2003-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2003-01-01T00:00:00+00:00
+[2022-04-25 12:43:58,613] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-25 12:43:59,313] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20030101T000000, start_date=20220425T124358, end_date=20220425T124359
+[2022-04-25 12:43:59,378] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-25 12:43:59,457] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-25 12:58:20,761] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:58:20,776] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 12:58:20,776] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:58:20,776] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-25 12:58:20,776] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 12:58:20,792] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): gcs_2_bq_ext_task> on 2003-01-01 00:00:00+00:00
+[2022-04-25 12:58:20,797] {standard_task_runner.py:52} INFO - Started process 3376 to run task
+[2022-04-25 12:58:20,803] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data_bq_dag', 'gcs_2_bq_ext_task', 'scheduled__2003-01-01T00:00:00+00:00', '--job-id', '2419', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmprg_7qqe3', '--error-file', '/tmp/tmp2xq5c18a']
+[2022-04-25 12:58:20,804] {standard_task_runner.py:77} INFO - Job 2419: Subtask gcs_2_bq_ext_task
+[2022-04-25 12:58:20,864] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [running]> on host de169a1be7ed
+[2022-04-25 12:58:20,937] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data_bq_dag
+AIRFLOW_CTX_TASK_ID=gcs_2_bq_ext_task
+AIRFLOW_CTX_EXECUTION_DATE=2003-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2003-01-01T00:00:00+00:00
+[2022-04-25 12:58:20,941] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-25 12:58:21,562] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20030101T000000, start_date=20220425T125820, end_date=20220425T125821
+[2022-04-25 12:58:21,617] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-25 12:58:21,663] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-25 13:18:53,403] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 13:18:53,428] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [queued]>
+[2022-04-25 13:18:53,428] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 13:18:53,429] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-25 13:18:53,429] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-25 13:18:53,456] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): gcs_2_bq_ext_task> on 2003-01-01 00:00:00+00:00
+[2022-04-25 13:18:53,473] {standard_task_runner.py:52} INFO - Started process 5540 to run task
+[2022-04-25 13:18:53,497] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'pbp_data_bq_dag', 'gcs_2_bq_ext_task', 'scheduled__2003-01-01T00:00:00+00:00', '--job-id', '2438', '--raw', '--subdir', 'DAGS_FOLDER/nfl_gcs_to_bq.py', '--cfg-path', '/tmp/tmpc9hrx9s6', '--error-file', '/tmp/tmp_kb1lsbs']
+[2022-04-25 13:18:53,506] {standard_task_runner.py:77} INFO - Job 2438: Subtask gcs_2_bq_ext_task
+[2022-04-25 13:18:53,710] {logging_mixin.py:109} INFO - Running <TaskInstance: pbp_data_bq_dag.gcs_2_bq_ext_task scheduled__2003-01-01T00:00:00+00:00 [running]> on host de169a1be7ed
+[2022-04-25 13:18:53,871] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pbp_data_bq_dag
+AIRFLOW_CTX_TASK_ID=gcs_2_bq_ext_task
+AIRFLOW_CTX_EXECUTION_DATE=2003-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2003-01-01T00:00:00+00:00
+[2022-04-25 13:18:53,874] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-25 13:18:54,606] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=pbp_data_bq_dag, task_id=gcs_2_bq_ext_task, execution_date=20030101T000000, start_date=20220425T131853, end_date=20220425T131854
+[2022-04-25 13:18:54,658] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-25 13:18:54,727] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -38,7 +38,7 @@ def transfer_to_bq_dag(
                 },
                 "externalDataConfiguration": {
                     "sourceFormat": "PARQUET",
-                    "sourceUris": [f"gs://{BUCKET}/raw/{data_type}/2009/*.parquet"],
+                    "sourceUris": [f"gs://{BUCKET}/raw/{data_type}/*.parquet"],
                 },
             },
         )
@@ -60,7 +60,7 @@ def transfer_to_bq_partition_dag(
                 },
                 "externalDataConfiguration": {
                     "sourceFormat": "PARQUET",
-                    "sourceUris": [f"gs://{BUCKET}/raw/{data_type}/2009/*.parquet"],
+                    "sourceUris": [f"gs://{BUCKET}/raw/{data_type}/*.parquet"],
                 },
             },
         )
@@ -92,7 +92,7 @@ pbp_data_bq_dag = DAG(
     tags=['dtc-de','nfl']
 )
 
-transfer_to_bq_partition_dag(
+transfer_to_bq_dag(
     dag=pbp_data_bq_dag,
     data_type='pbp_data',
 )
