@@ -41,7 +41,11 @@ The primary transformation of interest for this project can be found in the dbt/
 
 A dashboard is prepared in Google Data Studio to visualize some high-level stats, and can be found at: https://datastudio.google.com/reporting/d2d4243a-fe63-4180-bb6c-2b9d28b1c0f4
 
-This dashboard allows visualization of total receiving yards per player, with controls to filter for specific seasons and individual receivers by name. For example, for fun, you could compare total receiving yards for all players that have "Smith" as part of their name. The dashboard also contains a time-series visualization for average yards/game over the course of a season or set of seasons.
+![Alt text](/Dashboard_example_1.png "Dashboard overview example")
+
+This dashboard allows visualization of total receiving yards per player, with controls to filter for specific seasons and individual receivers by name. For example, for fun, you could compare total receiving yards for all players that have "Smith" as part of their name. The dashboard also contains a time-series visualization for average yards/game for an entire season or set of seasons.
+
+![Alt text](/Dashboard_example_2.png "Dashboard example 2")
 
 ## Reproducing this repo
 
