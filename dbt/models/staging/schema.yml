@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: staging
+      database: dtc-de-course-339113
+
+      schema: nfl_project
+
+      tables:
+        - name: external_pbp_data
+        - name: external_roster_data
+        - name: external_injury_data
