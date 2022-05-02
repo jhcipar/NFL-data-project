@@ -7,5 +7,6 @@ sources:
       schema: nfl_project
 
       tables:
-        - name: pbp_data_partitioned
+        - name: external_pbp_data
         - name: external_roster_data
+        - name: external_injury_data
