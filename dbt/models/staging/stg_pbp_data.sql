@@ -9,6 +9,7 @@
 SELECT
 
     play_id,
+    passer_player_id,
     game_id,
     home_team,
     away_team,
@@ -63,6 +64,8 @@ SELECT
     defteam_score,
     score_differential,
     epa,
+    yac_epa,
+    air_epa,
     ep,
     punt_blocked,
     incomplete_pass,
