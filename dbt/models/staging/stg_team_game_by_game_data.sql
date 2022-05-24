@@ -15,10 +15,10 @@ with team_passing as (
         `week`
     from {{ ref('stg_pbp_data') }}
     where
-        receiver_player_id is not null
+        special = 0
         and pass = 1
         and season_type = 'REG'
-    group by game_id,season,week,posteam,defteam
+    group by game_id,season,`week`,posteam,defteam
 ),
 
 team_rushing as(
@@ -33,7 +33,9 @@ team_rushing as(
     from {{ ref('stg_pbp_data') }}
     where
         rush = 1
-        and season_type = 'REG' and posteam is not null
+        and season_type = 'REG' 
+        and posteam is not null
+        and special = 0
     group by game_id,posteam,defteam
 ),
 
@@ -62,7 +64,7 @@ team_qb_pain as (
     group by game_id,posteam,defteam
 ),
 
-final as (
+team_data_all as (
     select 
         team_passing.*,
 
@@ -109,6 +111,12 @@ final as (
     order by game_id
     -- order by season, `week` desc
 
+),
+
+final as (
+    select
+        team_data_all.*
+    from team_data_all
 )
 
 select * from final
