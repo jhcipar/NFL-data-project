@@ -2,7 +2,7 @@
 
 ## Overview
 
-The goal of this project is to apply data engineering (DE) concepts to orchestrate scraping and upload of NFL data to Google Cloud Platform (GCP) and perform some high level transformation and visualization with dbt and Google Data Studio, respectively. The project uses an "extract-load-transform" (ELT) philosophy, where data is loaded 
+The goal of this project is to apply data engineering (DE) concepts to orchestrate scraping and upload of NFL data to Google Cloud Platform (GCP) and perform some high level transformation and visualization with dbt and Google Data Studio, respectively. The project uses an "extract-load-transform" (ELT) philosophy, where data is loaded into and then subsequently transformed within the DWH rather than between the 'extract' and 'load' steps (ETL).
 
 The data were scraped using nflfastpy: https://github.com/fantasydatapros/nflfastpy
 
