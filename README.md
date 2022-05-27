@@ -2,21 +2,20 @@
 
 ## Overview
 
-The goal of this project is to apply data engineering (DE) concepts to orchestrate scraping and upload of NFL data to Google Cloud Platform (GCP) and perform some high level transformation and visualization with dbt and Google Data Studio, respectively. The project uses an "extract-load-transform" (ELT) philosophy, where data is loaded into and then subsequently transformed within the DWH rather than between the 'extract' and 'load' steps (ETL).
+The goal of this project is to apply data engineering (DE) concepts to orchestrate scraping and upload of NFL data to Google Cloud Platform (GCP) and perform some high level transformation and visualization with dbt and Tableau, respectively. The project uses an "extract-load-transform" (ELT) philosophy, where data is loaded into and then subsequently transformed within the DWH rather than between the 'extract' and 'load' steps (ETL).
 
-The data were scraped using nflfastpy: https://github.com/fantasydatapros/nflfastpy
+The data were scraped using [nflfastpy](https://github.com/fantasydatapros/nflfastpy).
 
-A data dictionary for play-by-play data can be found at: https://nflreadr.nflverse.com/articles/dictionary_pbp.html
+A data dictionary for play-by-play data can be found at the [nflverse website](https://nflreadr.nflverse.com/articles/dictionary_pbp.html).
 
 
 ## Pipeline technologies used:
 
-![Alt text](/NFL_DE_flowchart_diagram.png "Data pipeline visualization")
+![Pipeline flowchart diagram](/images/NFL_DE_flowchart_diagram.png "Data pipeline visualization")
 
 The pipeline was built to aggregate NFL play-by-play (pbp), roster, and schedule data dating back to 1999, as well as team injury data (back to 2009).
 
-Apache Airflow is used to orchestrate batch data ingestion into the Google Cloud Storage (GCS) data lake and Google BigQuery (BQ) data warehouse. dbt is used to perform transformations within BQ where core metrics for game-by-game performance of NFL wide receivers are calculated and used as a final 'data mart' layer for Google Data Studio.
-
+Apache Airflow is used to orchestrate batch data ingestion into the Google Cloud Storage (GCS) data lake and Google BigQuery (BQ) data warehouse. dbt is used to perform transformations within BQ where core metrics for game-by-game performance of NFL wide receivers are calculated and used as a final 'data mart' layer for Tableau.
 All infrastracture for GCP is deployed with Terraform. Airflow is deployed on a Docker image using docker-compose.
 
 ## Batch data ingestion
@@ -29,17 +28,17 @@ The DAG tasks are currently set to run every year; this could be modified (in th
 
 ## Data warehouse
 
-Google BQ is used as the datawarehouse. External tables are created using the 'separate set of DAGs' mentioned in the 'Batch data ingestion' section.
+Google BigQuery is used as the data warehouse. External tables are created using the 'separate set of DAGs' mentioned in the 'Batch data ingestion' section.
 
 ## Transformations
 
-Data transformations are made with dbt cloud. The primary dataset used is play-by-play data; a staging step is used to select columns not broken by the .parquet formatting. 
+Data transformations are made with [`dbt cloud`](/dbt/). The primary dataset used is play-by-play data; a staging step is used to select columns not broken by the .parquet formatting. 
 
 The primary transformation of interest for this project can be found in the dbt/models/core/facts_receivers.sql file. This transformation calculates receiving yards, touchdowns, number of receptions, and number of targets for each NFL receiver. It also uses window functions to calculate season average receiving yards/game and attempted passes per game on each receivers team (useful for calculating metrics like receiver target share).
 
 ## Dashboard/Visualization
 
-A dashboard is prepared in Google Data Studio to visualize some high-level stats, and can be found at: https://datastudio.google.com/reporting/d2d4243a-fe63-4180-bb6c-2b9d28b1c0f4
+A dashboard is prepared in Tableau to visualize some high-level stats, and can be found at: https://datastudio.google.com/reporting/d2d4243a-fe63-4180-bb6c-2b9d28b1c0f4
 
 ![Alt text](/Dashboard_example_1.png "Dashboard overview example")
 
