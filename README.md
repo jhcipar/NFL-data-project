@@ -50,11 +50,11 @@ This dashboard allows visualization of the distribution of week-to-week fantasy 
 
 The barchart in the bottom left displaying the distribution of fantasy points scored is colored by player position; click a color to display just the stats corresponding to players with that position. You also can click a player in the bottom right scatterplot to show just the week-to-week fantasy points scored by that player in the top right:
 
-![Alt text](/images/Dashwboard_player_selection_example.gif "Dashboard example 2")
+![Alt text](/images/Dashboard_player_selection_example.gif "Dashboard example 2")
 
 It's a but clumsy, but you also can filter for just a single player by name by searching for their name (first initial + last name) in the top left, and selecting the corresponding name that pops up below:
 
-![Alt text](/images/Dashwboard_player_selection_example_2.gif "Dashboard example 2")
+![Alt text](/images/Dashboard_player_selection_example_2.gif "Dashboard example 2")
 
 This dataset and dashboard highlights the correlation between fantasy points scored and overall receiving targets. One actionable takeaway from these data is that when considering who to draft or play on any week as part of your NFL fantasy football team, choose players that are likely to get a lot of passes thrown at them! Especially when deciding between receivers on a week-to-week basis, consider playing receivers that might be more likely to have a higher target share for that particular week (e.g., if the WR1 on their team is injured that week).
 
